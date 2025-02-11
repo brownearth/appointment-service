@@ -1,0 +1,31 @@
+# Go specific
+*.exe
+*.test
+*.out
+coverage.out
+coverage.html
+build/
+
+# SQLite
+/data/*.db
+/data/*.sqlite
+/data/*.sqlite3
+
+# air
+.env.tmp
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+.history/
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# misc
+*.log
+tmp/

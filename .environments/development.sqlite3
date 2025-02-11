@@ -1,0 +1,6 @@
+APP_ENV=development
+APP_PORT=8080
+LOG_LEVEL=debug
+LOG_SOURCE=true
+STORAGE_TYPE=sqlite3
+DB_FILE=data/appointments.db
