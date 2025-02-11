@@ -156,10 +156,12 @@ check-docker:
 # DB migration targets
 #---------------------------------------------------------
 DB_PATH ?= data/appointments.db
+DB_DIR ?= data
 MIGRATIONS_DIR = migrations
 
 # Apply all up migrations
 migrate-up:
+	mkdir -p $(DB_DIR)
 	migrate -database "sqlite3://$(DB_PATH)" -path $(MIGRATIONS_DIR) up
 
 # Rollback all migrations
